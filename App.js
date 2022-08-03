@@ -11,7 +11,10 @@ export default function App() {
   //return <Register/>
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="LogIn">
+      <Stack.Navigator 
+        initialRouteName="LogIn"
+        screenOptions={{ headerShown: false }}
+      >
         <Stack.Screen name="LogIn" component={LogIn}/>
         <Stack.Screen name="Register" component={Register}/>
       </Stack.Navigator>

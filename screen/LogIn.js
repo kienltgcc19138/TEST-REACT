@@ -17,7 +17,7 @@ const LogIn = ({navigation}) => {
       <Image source={require("../assets/logo.png")} style={styles.logo} />
       <Text style={styles.title}>Log In</Text>
       <UserInput name="Email" />
-      <UserInput name="Password" />
+      <UserInput secureTextEntry = {true} name="Password" />
       <TouchableOpacity style={styles.submit}>
         <Text>Submit</Text>
       </TouchableOpacity>
